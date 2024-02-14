@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">I want to tell you that, it's not just about valentine's day , you matter to me every single day of the year.You're the reason of my smile , reason of my happines and love, ithink that every single breath is for u ma love.</h1>
+                <h1 class = "header_text">და მიუხედავად ყველაფრისა მაინც ყოველ დღე თავიდან მიყვარდები. ამას ვერაფერს ვუშვები და იმედია მუდამ ასე იქნება, მინდა რომ ყოველ დღე შენით იწყებოდეს და სრულდებოდეს. 
+                    მზად ხარ ამისთვის?
+                </h1>
+            </div>
+            <div class="gif_container">
+                <img src="https://i.pinimg.com/originals/ff/85/9c/ff859cdc0676caef7ae0e373d5fb2761.gif">
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "yes.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
